@@ -68,12 +68,20 @@ buttonNo.addEventListener("click", function(e) {
 
   
   buttonYes.addEventListener('click', () => {
-    bgAudio.volume = 0.1;
-    
-    alert('kay nag yes man ka tara na manglaag ta!');
+  bgAudio.volume = 0.1;
+
+  // show custom modal
+  const customAlert = document.getElementById('customAlert');
+  customAlert.classList.add('show');
+
+  // close button
+  const closeAlert = document.getElementById('closeAlert');
+  closeAlert.onclick = () => {
+    customAlert.classList.remove('show');
     bgAudio.volume = 0.5;
-    
-  });
+  }
+});
+
   
 
 };
