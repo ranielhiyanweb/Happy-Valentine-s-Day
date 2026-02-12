@@ -1024,9 +1024,9 @@ button:hover{
 .message{
   color: hotpink;
   position: absolute;
-  left: 10px;
+  left: 5px;
   top: 100px;
-  padding: 30px;
+  padding: 25px;
   font-weight: bold;
   font-size: 1rem;
 }
