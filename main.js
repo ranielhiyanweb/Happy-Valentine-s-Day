@@ -68,7 +68,7 @@ buttonNo.addEventListener("click", function(e) {
 
   
   buttonYes.addEventListener('click', () => {
-  bgAudio.volume = 0.1;
+  bgAudio.volume = 0.2;
 
   // show custom modal
   const customAlert = document.getElementById('customAlert');
@@ -78,7 +78,7 @@ buttonNo.addEventListener("click", function(e) {
   const closeAlert = document.getElementById('closeAlert');
   closeAlert.onclick = () => {
     customAlert.classList.remove('show');
-    bgAudio.volume = 0.5;
+    bgAudio.volume = 0.8;
   }
 });
 
