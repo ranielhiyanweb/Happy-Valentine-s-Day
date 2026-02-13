@@ -6,6 +6,9 @@ window.onload = () => {
   let message = document.getElementById('message');
   let buttonYes = document.getElementById('button');
   let buttonNo = document.getElementById('button2');
+  
+  
+  
 
   startAudio.addEventListener('click', () => {
 
@@ -67,8 +70,23 @@ buttonNo.addEventListener("click", function(e) {
 });
 
   
+  // 🎲 Random messages
+const randomMessages = [
+  "Hehe nag yes siya, what time po? chat ni raniel sa IG kung what time",
+  "Sure naka ha? Wala nay bawian kay nag yes naka!😏",
+  "Ikaw rajud akong Valentina🫶🌸",
+  "Excited nako makita ka, ngano bitaw nag yes HAHAHA😌",
+  "Promise mag enjoy ta ani kay e treat man tikag right💖"
+];
+
+  
+  
   buttonYes.addEventListener('click', () => {
   bgAudio.volume = 0.2;
+
+  // 🎲 random message
+  const randomIndex = Math.floor(Math.random() * randomMessages.length);
+  document.querySelector('#customAlert p').textContent = randomMessages[randomIndex];
 
   // show custom modal
   const customAlert = document.getElementById('customAlert');
@@ -81,6 +99,7 @@ buttonNo.addEventListener("click", function(e) {
     bgAudio.volume = 0.8;
   }
 });
+
 
   
 
