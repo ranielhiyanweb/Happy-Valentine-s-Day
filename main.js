@@ -76,7 +76,8 @@ const randomMessages = [
   "Sure naka ha? Wala nay bawian kay nag yes naka!😏",
   "Ikaw rajud akong Valentina🫶🌸",
   "Excited nako makita ka, ngano bitaw nag yes HAHAHA😌",
-  "Promise mag enjoy ta ani kay e treat man tikag right💖"
+  "Promise mag enjoy ta ani kay e treat man tikag right💖",
+  "Feb 14 alas 4am sa kadlawn atong laag, indot ng sayo kay dakog agi🤭"
 ];
 
   
