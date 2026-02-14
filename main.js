@@ -69,23 +69,28 @@ buttonNo.addEventListener("click", function(e) {
 });
 
   
-const randomMessages = [
+const messages = [
   "Hehe nag yes siya, what time po? chat lang sa IG kung what time",
-  "Sure naka ha? Wala nay bawian kay nag yes naka!😏",
+  "Sure naka ha? Wala nay bawiay hab kay nag yes naka!😏",
   "Ikaw rajud akong Valentina🫶🌸",
   "Promise mag enjoy ta ani kay e treat man tikag right💖",
-  "Feb 14 alas 4am sa kadlawn atong laag, indot ng sayo kay dakog agi🤭"
+  "og mao rato aylabyo😚🫶"
 ];
 
-  
+
+  let messageIndex = 0;
+
   
   buttonYes.addEventListener('click', () => {
   bgAudio.volume = 0.2;
 
+  document.querySelector('#customAlert p').textContent = messages[messageIndex];
 
-  const randomIndex = Math.floor(Math.random() * randomMessages.length);
-  document.querySelector('#customAlert p').textContent = randomMessages[randomIndex];
+  messageIndex++;
 
+  if (messageIndex >= messages.length) {
+    messageIndex = 0;
+  }
 
   const customAlert = document.getElementById('customAlert');
   customAlert.classList.add('show');
@@ -96,6 +101,7 @@ const randomMessages = [
     bgAudio.volume = 0.8;
   }
 });
+
 
 
   
