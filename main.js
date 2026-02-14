@@ -82,7 +82,7 @@ const messages = [
 
   
   buttonYes.addEventListener('click', () => {
-  bgAudio.volume = 0.2;
+  bgAudio.volume = 0.5;
 
   document.querySelector('#customAlert p').textContent = messages[messageIndex];
 
@@ -98,7 +98,7 @@ const messages = [
   const closeAlert = document.getElementById('closeAlert');
   closeAlert.onclick = () => {
     customAlert.classList.remove('show');
-    bgAudio.volume = 0.8;
+    bgAudio.volume = 1;
   }
 });
 
